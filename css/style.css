@@ -20,11 +20,23 @@ body
     font-size: 16px; /*1 rem = 10px*/
     font-family: 'Krub', sans-serif;
 }
-.Titlee
+h1
 {
-    text-align: center;
     font-size: 3.8rem;
 }
+h2
+{
+    font-size: 2.8rem;
+}
+h3
+{
+    font-size: 1.8rem;
+}
+h1,h2,h3
+{
+    text-align: center;
+}
+
 /*this is spam*/
 .Titlee span
 {
@@ -74,24 +86,34 @@ body
 }
 /*Responsive Web Desing*/
 
-@media(min-width: 480px){
-  h1
-  {
-
-  }
-}
-/*Second*/
-@media(min-width: 768px){
-  h1
-  {
-
-  }
-}
 .hero
 {
     background-image: url(../img/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
+   bottom: 19px;
+    position: relative;
+}
+.Content-hero
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Content-heroc, h2,
+.Content-hero p
+{
+    color: var(--blanco);
+}
+.ubication
+{
+    display: flex;
+    align-items: flex-end;
 }
