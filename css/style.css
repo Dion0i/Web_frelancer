@@ -10,6 +10,10 @@
 html
 {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body
 {
@@ -28,8 +32,8 @@ body
 }
 .contenedor
 {
-    width: 120rem;
-    margin: 0 auto 0 auto;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 .nav-bg
 {
@@ -37,11 +41,25 @@ body
 }
 .Navegacion-principal
 {  
-    display: flex; 
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column; 
+    
 }
+
+/*Media qurie 768px*/
+@media(min-width: 768px)
+{
+    .Navegacion-principal
+    {
+        flex-direction: row;
+        justify-content: space-evenly;
+    } 
+}
+
 .Navegacion-principal a
 {
+    display: block;
+    text-align: center;
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
@@ -66,6 +84,14 @@ body
 @media(min-width: 768px){
   h1
   {
-    
+
   }
+}
+.hero
+{
+    background-image: url(../img/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
 }
