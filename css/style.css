@@ -5,6 +5,7 @@
     --Primario: #FFC107;
     --secundario: #0097A7;
     --gris: #757575;
+    --grisClaro: #DFE9F3;
 }
 
 html
@@ -19,6 +20,22 @@ body
 {
     font-size: 16px; /*1 rem = 10px*/
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+}
+@media(min-width: 768px)
+{
+    .boton
+    {
+        width: auto;
+    }
+}
+.Shadow
+{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color: var(--blanco);
+    border-radius: 1rem;
 }
 h1
 {
